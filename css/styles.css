@@ -1,0 +1,25 @@
+h1{
+  text-align:center;
+  color: #616161;
+}
+
+h2{
+  text-align:center;
+  color: purple;
+  background-color:#DBD9DC;
+  margin:15px;
+}
+
+.row{
+  border:1px solid purple;
+  margin:15px;
+  padding:2px;
+}
+
+.submitbutton{
+  background-color:#DBD9DC;
+  border:2px solid purple;
+  margin:15px;
+  text-align:center;
+  font-weight:bolder;
+}
