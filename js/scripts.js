@@ -1,6 +1,3 @@
-var DD= document.getElementById("DD");
-var MM= document.getElementById("MM");
-
 var akanName=function(DD,MM,dd,mm,cc,yy,gender){
 if (DD>31 || DD<=0 ){
 alert("You entered an invalid date. Please try again.")
@@ -53,7 +50,8 @@ alert("Your Akan Name is Ama!");
 
 }
 
-
+var DD= document.getElementById("DD");
+var MM= document.getElementById("MM");
 var YYYY= document.getElementById("YYYY");
 var gender=document.getElementById("gender")
 var dd=parseInt(DD);

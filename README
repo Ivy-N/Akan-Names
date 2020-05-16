@@ -1,0 +1,15 @@
+Project name: Akan Names
+
+Project description: This webpage gives the user an Akan Name based on their birthday and gender.
+
+Author(s) information:Ivy-N
+
+BDD:
+Get the user's Gender
+Get the user's Birthday
+Calculate the weekday the user was born.
+Retun the user's Akan Name
+
+Technologies used:HTML, Javascript, CSS
+
+Contact information: username:Ivy-N
