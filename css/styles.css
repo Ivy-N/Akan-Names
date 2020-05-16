@@ -18,8 +18,13 @@ h2{
 
 .submitbutton{
   background-color:#DBD9DC;
-  border:2px solid purple;
+  border:2px solid #616161;
   margin:15px;
-  text-align:center;
   font-weight:bolder;
+  text-align:center;
+}
+
+.birthday{
+  float:left;
+  padding:10px;
 }
