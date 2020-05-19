@@ -1,9 +1,6 @@
-var akanName=function(DD,MM,dd,mm,cc,yy,gender){
-if (DD>31 || DD<=0 ){
+var akanName=function(dd,mm,yyyy,weekday,gender){
+if (dd<0 || dd>31 || mm<=0 || mm>31 || yyyy<0){
 alert("You entered an invalid date. Please try again.")
-}
-else if (MM>12 || MM<=0){
-alert("You entered an invalid month. Please try again.")
 }
 else if (weekday===0 && gender==="male"){
 alert("Your Akan Name is Kwasi!");
@@ -47,17 +44,14 @@ alert("Your Akan Name is Afua!");
 else if (weekday===6 && gender==="female"){
 alert("Your Akan Name is Ama!");
 }
-
 }
 
-var DD= document.getElementById("DD");
-var MM= document.getElementById("MM");
-var YYYY= document.getElementById("YYYY");
-var gender=document.getElementById("gender")
-var dd=parseInt(DD);
-var mm=parseInt(MM);
-var cc=parseInt((YYYY/100));
-var yy=parseInt(YYYY-cc*100);
-var weekday=parseInt(  ( (cc/4) -2*cc-1) + ((5*yy/4) ) + ((26*(mm+1)/10)) + dd ) % 7;
-var result=akanName(DD,MM,dd,mm,cc,yy,gender);
-alert(result);
+var dd= Number(document.getElementById(DD));
+var mm= parseInt(document.getElementById(MM));
+var yyyy= parseInt(document.getElementById(YYYY));
+var gender=document.getElementById(gender1);
+var cc=parseInt((yyyy/100));
+var yy=parseInt(yyyy-(cc*100));
+var weekday=( ( (cc/4) -2*cc-1) + ((5*yy/4) ) + ((26*(mm+1)/10)) + dd ) % 7
+var result=akanName(weekday,gender)
+alert (result)

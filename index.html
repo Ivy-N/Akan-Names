@@ -10,19 +10,19 @@
     <h1>Akan Names</h1>
     <h2>Input your details to find out your Akan Name!</h2>
 
-    <form id="akanNameForm" class= "form-group"  METHOD="GET">Akan Names<BR>
+    <form id="akanNameForm" onSubmit="akanName()" class= "form-group"  METHOD="get">Akan Names<BR>
 
     <div class=row>
+
       <div class=form-group>
-        <label for=gender><strong>Gender:</strong></label>
-        <select class=form-control id=gender>
-          <option>male</option>
-          <option>female</option>
-        </select>
+        <label for=gender1><strong>Gender:</strong></label>
+        <input type=text class="form-control" placeholder="male / female" id="gender1" value=""/>
       </div>
+
     </div>
 
     <div class=row>
+
       <div class=birthday>
       <p><strong>Birthday:</strong></p>
       </div>
@@ -42,13 +42,14 @@
         <input type=number class="form-control" placeholder="YYYY" id="YYYY" value=""/>
       </div>
 
-  </div>
-
-  <div class=row>
-    <div class=submitbutton>
-    <button type="submit" class="btn btn-default" onSubmit="akanName(akanNameForm)">Find my Akan Name</button>
     </div>
-  </div>
+
+    <div class=row>
+
+      <div class=submitbutton>
+      <button type="submit" class="btn btn-default" onSubmit="akanName()">Find my Akan Name</button>
+
+    </div>
 
   </form>
 
