@@ -1,6 +1,6 @@
-
 $(document).ready(function() {  
-  $("#akanNameForm form").submit(function(event) {
+  $("form#akanNameForm").submit(function(event) {
+    event.preventDefault();
     var dd= $("input#DD").val();
     var mm= $("input#MM").val();
     var yyyy= $("input#YYYY").val();
