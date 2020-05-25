@@ -4,56 +4,44 @@
     <title>Akan Names</title>
     <link href=css/bootstrap.css rel=stylesheet type=text/css>
     <link href=css/styles.css rel=stylesheet type=text/css>
-    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
-    <script src=js/scripts.js></script>
-
   </head>
-
   <body>
+    <script src=js/scripts.js></script>
     <h1>Akan Names</h1>
     <h2>Input your details to find out your Akan Name!</h2>
-
-    <form id="akanNameForm" onSubmit="{this.onSubmit}" class= "form-group"  METHOD="get">Akan Names<BR>
-
+    <form id="akanNameForm" class= "form-group"  METHOD="GET">Akan Names<BR>
     <div class=row>
-
       <div class=form-group>
         <label for=gender><strong>Gender:</strong></label>
-        <input type=text class="form-control" placeholder="male / female" id="gender" value=""/>
+        <select class=form-control id=gender>
+          <option>male</option>
+          <option>female</option>
+        </select>
       </div>
-
     </div>
-
     <div class=row>
-
       <div class=birthday>
       <p><strong>Birthday:</strong></p>
       </div>
-
       <div class=form-inline>
         <label for=DD>DD:</label>
         <input type=number class="form-control" placeholder="DD" id="DD" value=""/>
       </div>
-
       <div class=form-inline>
         <label for=MM>MM:</label>
         <input type=number class="form-control" placeholder="MM" id="MM" value=""/>
       </div>
-
       <div class=form-inline>
         <label for=YYYY>YYYY:</label>
         <input type=number class="form-control" placeholder="YYYY" id="YYYY" value=""/>
       </div>
+  </div>
 
+  <div class=row>
+    <div class=submitbutton>
+    <button type="submit" class="btn btn-default" onSubmit="akanName(akanNameForm)">Find my Akan Name</button>
     </div>
-
-    <div class=row>
-
-      <div class=submitbutton>
-      <button type="submit" class="btn btn-default" onSubmit="{this.onSubmit}">Find my Akan Name</button>
-      </div>
-
-    </div>
+  </div>
 
   </form>
     </body>
